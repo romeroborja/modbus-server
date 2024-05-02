@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: backend
+    image: backend:dev
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile
+      target: development-stage
+    networks:
+      - app
+    ports:
+      - 5000:5000
+      - 5003:5003
+      - 5678:5678
+    volumes:
+      - ./backend/src:/app
+    restart: unless-stopped
+
+  frontend:
+    container_name: frontend
+    image: frontend:dev
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+      target: development-stage
+    networks:
+      - app
+    ports:
+      - 8080:8080
+    volumes:
+      - ./frontend:/app
+    restart: unless-stopped
+
+networks:
+  app:
+    name: app

@@ -1,0 +1,41 @@
+{
+  "name": "frontend",
+  "version": "3.0.0",
+  "private": true,
+  "author": "Borja Romero",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@popperjs/core": "2.11.5",
+    "axios": "^0.27.2",
+    "bootstrap": "5.1.3",
+    "chart.js": "3.8.0",
+    "choices.js": "^10.2.0",
+    "core-js": "3.23.2",
+    "vue": "3.2.37",
+    "vue-axios": "^3.4.1",
+    "vue-router": "4.0.16",
+    "vuex": "4.0.2",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/eslint-parser": "^7.18.2",
+    "@vue/cli-plugin-babel": "~5.0.6",
+    "@vue/cli-plugin-eslint": "~5.0.6",
+    "@vue/cli-plugin-router": "~5.0.6",
+    "@vue/cli-service": "~5.0.6",
+    "@vue/compiler-sfc": "3.2.37",
+    "@vue/eslint-config-prettier": "7.0.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "^8.18.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-vue": "9.1.1",
+    "prettier": "2.7.1",
+    "sass": "1.53.0",
+    "sass-loader": "13.0.0"
+  }
+}

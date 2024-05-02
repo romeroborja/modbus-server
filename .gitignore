@@ -1,0 +1,36 @@
+__pycache__/
+.vscode
+vetur.config.js
+README-TEST.md
+package-lock.json
+production/
+app.log
+
+# Docker
+docker-compose.debug.yml
+.dockerignore
+
+.DS_Store
+frontend/dist
+frontend/node_modules
+frontend/node_modules/.cache
+
+documentation/latex
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+bbdd/database.db
+bbdd/som-db.sqbpro
+frontend/node_modules/.cache/eslint/

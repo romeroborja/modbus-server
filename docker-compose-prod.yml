@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  modbus-server:
+    container_name: modbus-server
+    image: modbus-server
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: production-stage      
+    networks:
+      - modbus-server
+    ports:
+      - 502:502
+      - 80:80
+    restart: unless-stopped
+
+networks:
+  modbus-server:
+    name: modbus-server
+    driver: bridge
