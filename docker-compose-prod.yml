@@ -3,7 +3,7 @@ version: '3.8'
 services:
   modbus-server:
     container_name: modbus-server
-    image: modbus-server
+    image: romeroborja/modbus-server:1.0
     build:
       context: .
       dockerfile: ./Dockerfile
