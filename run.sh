@@ -24,7 +24,7 @@ then
       echo -e "\nRUNNING THE APPLICATION IN PRODUCTION MODE.\n"
       docker compose -f docker-compose-prod.yml up
     fi
-
+  fi
 else
   echo "You must enter input parameters"
 fi
